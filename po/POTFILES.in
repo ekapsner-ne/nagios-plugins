@@ -14,7 +14,6 @@ plugins/check_mrtg.c
 plugins/check_mrtgtraf.c
 plugins/check_mysql.c
 plugins/check_nagios.c
-plugins/check_nt.c
 plugins/check_ntp.c
 plugins/check_ntp_peer.c
 plugins/check_ntp_time.c

@@ -1847,12 +1847,6 @@ if test -n "$PATH_TO_APTGET" ; then
 	EXTRAS="$EXTRAS check_apt\$(EXEEXT)"
 fi
 
-
-if test -f $srcdir/plugins/check_nt.c ; then
-  EXTRAS="$EXTRAS check_nt\$(EXEEXT)"
-fi
-
-
 dnl used in check_dhcp
 AC_CHECK_HEADERS(sys/sockio.h)
 

@@ -37,7 +37,7 @@ check_tcp_programs = check_ftp check_imap check_nntp check_pop \
 
 EXTRA_PROGRAMS = check_mysql check_radius check_pgsql check_snmp check_hpjd \
 	check_swap check_fping check_ldap check_game check_dig \
-	check_nagios check_by_ssh check_dns check_nt check_ide_smart	\
+	check_nagios check_by_ssh check_dns check_ide_smart	\
 	check_procs check_mysql_query check_apt check_dbi check_uptime
 
 EXTRA_DIST = t tests
@@ -89,7 +89,6 @@ check_mysql_query_CFLAGS = $(AM_CFLAGS) $(MYSQLCFLAGS)
 check_mysql_query_CPPFLAGS = $(AM_CPPFLAGS) $(MYSQLINCLUDE)
 check_mysql_query_LDADD = $(NETLIBS) $(MYSQLLIBS)
 check_nagios_LDADD = $(BASEOBJS)
-check_nt_LDADD = $(NETLIBS) 
 check_ntp_LDADD = $(NETLIBS) $(MATHLIBS)
 check_ntp_peer_LDADD = $(NETLIBS) $(MATHLIBS)
 check_nwstat_LDADD = $(NETLIBS)
